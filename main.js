@@ -1,4 +1,4 @@
-let box = document.getElementById('box')
+/*let box = document.getElementById('box')
 let botaoDia = document.getElementById('butao-dia')
 let botaoTarde = document.getElementById('butao-tarde')
 let botaoNoite = document.getElementById('butao-noite')
@@ -46,3 +46,31 @@ botaoGalo.addEventListener('click', function () {
     galoImg.style.display = "block"
     console.log('teste')
 })
+*/
+
+
+
+function trocaImagem(src) {
+
+    console.log('entrei')
+
+    let cachorroImg = document.getElementById('cachorro')
+    let gatoImg = document.getElementById('gato')
+    let galoImg = document.getElementById('galo')
+
+    console.log(src)
+
+    const imagens = [cachorroImg.src, galoImg.src, galoImg.src]
+
+    imagens.forEach((item) => {
+        item.src = src
+        console.log(item)
+        console.log('funcionando')
+    }
+
+    )
+}
+
+
+
+
